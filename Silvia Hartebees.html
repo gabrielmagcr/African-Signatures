@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia Hartebees - Signature</title>
+</head>
+<body>
+    <div id="content">
+ <table cellpadding="0" cellspacing="0" border="0" width="533" style="font-family: Georgia, serif; font-size: 14px; color: #333; max-width: 533px;">
+  
+  <tr>
+    <td colspan="2" style="text-align: center;">
+        <a href="https://www.africanmonarchlodges.com/" target="_blank" style="text-decoration: none;">
+      <img src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/07/African-signature-banner.png"
+           alt="Banner Elefantes"
+           width="500"
+           style="display: block;" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="200" style="width: 200px; padding: 15px 0; text-align: left;">
+      <img src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/05/Group-17.png"
+           alt="African Monarch Logo"
+           width="250"
+           style="display: block;" />
+    </td>
+
+    <td style="padding: 0px 33px 17px 15px; text-align: right; text-decoration: none;">
+               <a href="https://www.facebook.com/AfricanMonarchLodges/" target="_blank" class="btn"><img
+                            src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/02/AML-Facebook-icon.png"
+                            width="25"></a>
+                    <a href="https://www.instagram.com/africanmonarchlodges/" target="_blank" class="btn"
+                        style="margin-left:5px"><img
+                            src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/02/AML-Instagram-icon.png"
+                            width="25"></a>
+                    <a href="https://za.pinterest.com/africanmonarchlodges" target="_blank" class="btn"
+                        style="margin-left:5px"><img
+                            src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/02/AML-Pinterest-icon.png"
+                            width="25"></a>
+                    <a href="https://www.linkedin.com/company/african-monarch-lodges/"
+                        target="_blank" class="btn" style="margin-left:5px"><img
+                            src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/02/AML-LinkedIn-icon.png"
+                            width="25"></a>
+                    <a href="https://www.youtube.com/@AfricanMonarchLodges" target="_blank" class="btn"
+                        style="margin-left:5px"><img
+                            src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/02/AML-YouTube-Icon.png"
+                            width="25"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=264811252122"
+                        target="_blank" class="btn" style="margin-left:5px"><img
+                            src="https://www.africanmonarchlodges.com/wp-content/uploads/2025/02/AML-WhatsApp-Icon.png"
+                            width="25"></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" style="padding: 5px 0px;">
+      <span style="font-size: 24px; font-family: Gerogia;">Silvia Hartebees</span> | <span style="font-family: Arial;">Lodge Manager - Kazile Island Lodge</span><br />
+      <div style="padding-top: 10px; font-family: Arial;"><a href="mailto:kazile@africanmonarchlodges.com" style="color: #333; text-decoration: none; margin-right: 10px;">kazile@africanmonarchlodges.com</a><a style="color: #333; text-decoration: none;" href="tel:264811457399">+264 81 145 7399</a></div>
+
+
+      <div style="margin-top: 10px;">
+        <a href="https://www.africanmonarchlodges.com/stay/nambwa-tented-lodge/" target="_blank" style="color: #D3B88C; text-decoration: none; font-size: 14px; font-family: Arial; font-weight: 700;">Nambwa Tented Lodge |</a> 
+        <a href="https://www.africanmonarchlodges.com/stay/kazile-island-lodge/" target="_blank" style="color: #D3B88C; text-decoration: none; font-size: 14px; font-family: Arial; font-weight: 700;">Kazile Island Lodge |</a> 
+        <a href="https://www.africanmonarchlodges.com/our-purpose/" target="_blank" style="color: #D3B88C; text-decoration: none; font-size: 14px; font-family: Arial; font-weight: 700;">The Sijwa Project</a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<br><br>
+    <span>Step 1</span>
+<button style="background-color: greenyellow;border: solid 1px;padding: 10px;border-radius: 12px;" id="btn">Click here to copy</button>
+<br><br>
+
+<div class="steps">
+    <span >Step 2: Go to <a href="https://mail.google.com/mail" target="_blank">Gmail.com</a> and click on settings</span>
+
+    <img src="./assets/step 2.png" alt="">
+    <span>Click on See all settings</span>
+    <img src="./assets/step 3.png" alt="">
+    <span>Scroll down and click on Create new button</span>
+    <img src="./assets/step 4.png" alt="">
+    <span>Add name, click on Create</span>
+    <img src="./assets/step 5.png" alt="">
+    <span>Paste the signature and select it on "For New emails use" and "On reply/forward use" then save changes</span>
+    <img src="./assets/step 6.png" alt="">
+</div>
+</body>
+
+<style>
+    body{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+    }
+    .steps{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .steps span{
+        font-size: 28px;
+    }
+
+</style>
+<script>
+    document.getElementById("btn").addEventListener("click", async function() {
+        const content = document.getElementById("content").outerHTML;
+        
+        try {
+            await navigator.clipboard.write([
+                new ClipboardItem({
+                    "text/html": new Blob([content], { type: "text/html" })
+                })
+            ]);
+            alert("Copied");
+        } catch (err) {
+            console.error("Error: ", err);
+            alert("Error. Ask Gabo");
+        }
+    });
+</script>
+</body>
+</html>
