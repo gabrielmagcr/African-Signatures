@@ -65,7 +65,7 @@ const employees = [
 
 
 employees.forEach(employee => {
-    const fileName = `${employee.name.replace(/\s+/g, '_')}.html`;
+    const fileName = `${employee.name.replace(/\s+/g, '-')}.html`;
     const filePath = path.join(outputDir, fileName);
 
     const htmlContent =`<!DOCTYPE html>
